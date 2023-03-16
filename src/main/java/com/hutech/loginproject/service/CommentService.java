@@ -1,0 +1,11 @@
+package com.hutech.loginproject.service;
+
+import java.util.List;
+
+import com.hutech.loginproject.model.comment.CommentDto;
+
+public interface CommentService {
+CommentDto createComment(CommentDto  commentDto,Long postId);
+List<CommentDto> findallCommentDetails();
+void deleteBycommentid(Long id);
+}
